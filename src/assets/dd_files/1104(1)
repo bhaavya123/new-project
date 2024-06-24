@@ -1,0 +1,367 @@
+
+
+body.nextelopen > *{
+	<!-- display: none !important; -->
+}
+
+body.nextelopen > #nextel-chatbox{
+	display: block !important;
+}
+
+#nextel-chatbox{
+	position: fixed;
+	bottom: 30px !important;
+	overflow: visible;
+	z-index: 2147483647;
+	opacity: 0;
+}
+
+
+#nextel-chatbox *{
+	box-sizing: border-box;
+}
+
+ 
+
+#nextel-chatbox{
+	right: 2%;
+	bottom : 50% !important;
+}
+#nextel-chatbox #nextelwelc{
+   right: 0px;
+}
+#nextel-chatbox #chatflow{
+	right: 0px !important;
+}
+
+
+#nextel-chatbox #nextelwelc{
+    position: absolute;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0px 8px 1px rgba(35, 47, 53, 0.18);
+    border-radius: 10px;
+    padding: 20px;
+    bottom: 75px;
+}
+#nextel-chatbox #nextelwelc .c{
+	float: right;
+    margin-top: -14px;
+    margin-right: -8px;
+    cursor: pointer;
+    color: #777;
+    
+}
+
+#nextel-chatbox #nextelwelc .c:hover{
+	display:block;
+}
+
+
+
+#nextel-chatbox #nextelwelc .f{
+    display: block;
+    color: #666;
+   	margin-bottom: 10px;
+    margin-top: -10px;
+}
+#nextel-chatbox #nextelwelc .g{
+	color: #212121;
+}
+#nextel-chatbox #nextelwelc:after{
+	/*content: ' ';
+    background-color: #fff;
+    position: absolute;
+    bottom: -7px;
+    right: 7px;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    box-shadow: 2px 2px 1px #ccc;	*/
+}
+
+
+#nextel-chatbox #floatbutton .opened #svg_img{
+	width:100%;
+	height:100%;
+	transition: all .3s ease;
+	padding:2px;
+}
+
+#nextel-chatbox #floatbutton .opened #round{
+	height: 60px;
+  	width: 60px;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+#nextel-chatbox #floatbutton .opened #round img{
+	position: relative;
+   top: 10px;
+   left: 11px;
+   height: 42px;
+   width: 42px;
+   transition: all 0.3s ease-in;
+}
+
+#nextel-chatbox #floatbutton .opened #round .wa-collapse{
+	 left: 20px;
+    top: 19px;
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+
+#nextel-chatbox #floatbutton .opened #closed_ico{
+	 position: relative;
+    top: -53px;
+    left: 15px;
+    width: 35px;
+}
+
+#floatbutton:hover {
+    transition: transform 250ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+    transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+#nextel-chatbox #floatbutton .opened #svg_img:hover{
+	padding:0px;
+}
+
+
+#nextel-chatbox .chatframe .header{
+	background-color: #25d366;
+    background-position: 10px center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+	height: 70px !important;
+    max-height: 70px !important;
+	display: none;
+	align-items:center;
+	padding: 10px;
+	line-height: inherit !important;
+}
+
+#nextel-chatbox .chatframe .header .icon::before{	
+		content: "";
+    bottom: 0px;
+    right: 0px;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    background-color: rgb(74, 213, 4);
+    display: block;
+    position: relative;
+    top:34px;
+    left:38px;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid rgb(15, 87, 28);
+}
+
+#nextel-chatbox .chatframe .header .icon{	
+	background-image: url('https://s3.ap-south-1.amazonaws.com/nextel.io/images/1618991016_logo.png');
+	background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: 1px silver solid;
+    border-radius: 100%;
+    margin: 10px;
+    background-color: #FFF;
+    background-size: 30px;
+}
+#nextel-chatbox .chatframe .header .header-box{
+	flex:1;
+}
+#nextel-chatbox .chatframe .header .cross {
+   margin: 10px;
+    background-image: url(http://chat.nextel.io/s/images/kristal_close_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    top: -21px;
+    left: 7px;
+    opacity: 0.5;
+}
+#nextel-chatbox .chatframe .header .header_title{
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFF;
+}
+#nextel-chatbox .chatframe .header .header_subtitle{
+	font-size: 10px;
+	color: #fff;
+}
+
+@media only screen and (min-device-width: 568px)
+{
+#nextel-chatbox .chatframe .frameparent { 
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+}
+
+
+@media only screen and (max-device-width: 568px)
+{
+	#nextel-chatbox .chatframe .frameparent { 
+	left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 440px;
+    width: 434px;
+}
+}
+
+#nextel-chatbox .chatframe .frameparent iframe{
+	width: 100%;
+	height: 100%;
+	max-height: 100vh;
+	max-width: 100vw;
+	border: none;
+	position: static;
+}
+#nextel-chatbox #chatflow .frameparent iframe{
+	border: none;
+	position: static;
+}
+
+@media only screen and (min-device-width: 568px) {
+	#nextel-chatbox{
+		top: 30px;
+		
+	}
+	#nextel-chatbox > div{
+		position: relative;
+		height: 100%;
+		
+	}
+	#nextel-chatbox #floatbutton{
+	   position: absolute;
+	   bottom: 0px;
+	   width: 60px;
+	   height: 60px;
+	   right: 0px;
+	   opacity: 1;	
+	   z-index:2147483645;
+	}
+
+	#nextel-chatbox .float_rotated{
+	   width: 60px !important;
+	}
+
+	#nextel-chatbox  #chatflow{
+		position: relative;
+		bottom: 75px;
+		background-color: #FFF;
+		box-shadow: 0 0px 8px 1px rgba(35, 47, 53, 0.18);
+		overflow: hidden;
+		border-radius: 10px !important;
+	}
+
+
+	#nextel-chatbox  #chatmin{
+		height: 0px;
+		width: 0px;
+		position: absolute;
+		bottom: 75px;
+		right: 0px;
+		background-color: transparent;
+		opacity: 0;
+		overflow: hidden;
+		border-radius: 10px !important;
+		background-color: #transparent;
+		-webkit-mask: url('https://chat.nextel.io/assets/webend/images/nextel_chatmin_mask.png');
+		-webkit-mask-repeat: repeat-x;
+		-webkit-mask-position: left top;
+	}
+	#nextel-chatbox  #chatmin.vis{
+		   max-height: 550px !important;
+    		height: 90% !important;
+    		min-height: 300px;
+    		width: 370px !important;
+    		opacity: 1 !important;	
+	}
+	#nextel-chatbox  #chatmin.vis .fm{
+		position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    right: 0px;
+	    bottom: 0px;
+	    border-radius: 10px;
+	    overflow: hidden;	
+	}
+	#nextel-chatbox  #chatmin iframe{
+		background-color: transparent;
+	}
+	#nextel-chatbox  #chatmin.vis .fm iframe{
+		width: 100%;
+	    height: 100%;
+	    max-height: 100vh;
+	    max-width: 100vw;
+	    border: none;
+	    position: static;	
+	}
+	#nextel-chatbox .chatframe { 
+		max-height: 250px !important;
+		height: 50% !important;
+		min-height: 442px;
+		width: 360px !important;
+		opacity: 1 !important;
+	}
+	#nextel-chatbox .chatframe .header{
+		border-radius: 10px 10px 0px 0px;
+	}
+}
+@media only screen and (max-device-width: 568px)
+{
+  	#nextel-chatbox #floatbutton {
+	    position: absolute;
+	    bottom: 0px;
+	    width: 60px;
+	    height: 60px;
+	    border-radius: 50%;
+	    right: 0px;
+	    opacity: 1;
+	    z-index:2147483645;
+	}
+	#nextel-chatbox #chatflow {
+		position: relative;
+		box-shadow: rgb(0 0 0 / 10%) 0px 12px 24px 0px !important;
+    	display: flex !important;
+    	flex-direction: column !important;
+    	width: 100% !important;
+    	border-radius: 10px !important;
+    	overflow: hidden !important;
+    	background-color: rgb(255, 255, 255) !important;
+    	transform: translate3d(0px, 0px, 0px) !important;
+    	pointer-events: all !important;
+    	visibility: visible;
+    	touch-action: auto !important;
+    	margin-bottom: 76px !important;
+	}
+	#nextel-chatbox .chatframe {
+		height: 100% !important;
+		width: 100% !important;
+	    opacity: 1 !important;
+	}
+}
